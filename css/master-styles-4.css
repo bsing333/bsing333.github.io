@@ -1,0 +1,245 @@
+/* Summary: No Scroll Bar */
+html, body, .flip-text-wrapper{
+  overflow: auto; /* Enable scrolling */
+  scrollbar-width: none; /* For Firefox */
+}
+
+/* Summary:  Hide scrollbar for Webkit-based browsers */
+html::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, Edge */
+}
+
+/* Summary: Body Styles */
+body {
+  font-size: 22px;
+  font-family: Times;
+  line-height: 29px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: url('../images/dark-sky.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  cursor: crosshair;
+  display: block;
+  overflow: none;
+}
+
+/* Summary: Body Overlay */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.625;
+  z-index: -100;
+}
+
+/* Summary: Canvas Layout */
+.whole-canvas {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+    overflow: none;
+}
+
+/* Main content (TRUE centered) */
+.main-content {
+  width: 80%;
+  max-width: 555px;
+  margin-top: 17px;
+  /* Create fashion-forward positioning */
+  margin-left: clamp(0px,5%,20%); /* Dynamic left margin */
+  margin-right: clamp(196px,20%,0px);
+  /* Ensure top text stays visible on narrow screens */
+  /*margin-top: -8px;  /*Subtract the padding from top margin*/
+  /* Add padding for stable hover */
+  /* Maintain position while allowing natural flow */
+  position: relative;
+  z-index: 1; /* Main content remains at the base */
+    overflow: none;
+}
+
+/* Maintain blur effect */
+.main-content.blur {
+  filter: blur(8px);
+  color: #d9d9d6;
+  transition: filter 0.25s ease, color 0.25s ease;
+}
+
+.main-line {
+  width: calc(100% - 222px); /* Matches content-container width */
+  margin-bottom: 20px; /* Space below the line */
+  position: absolute;
+  background-color: var(--line-color);
+  animation: slide-in .2 ease-out forwards;
+  top: 10px;
+  left: 10px;
+}
+
+
+/* Summary: FOOTNOTES */
+.footnotes {
+  position: absolute;
+  pointer-events: auto;
+  font-family: Arial, sans-serif;
+  font-weight: 100;
+  top: 10px; /* Space from the top of the parent container */
+  right: 10px; /* Space from the right edge of the screen */
+  font-size: 10px;
+  line-height: 1.5;
+  width: 175px;
+  padding-right: 10px;
+  height: 95vh; /* Adjust to your desired height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  cursor: crosshair;
+  z-index: 1;
+  transition: opacity var(--fade-in-duration) ease-in;
+}
+
+.footnotes-line {
+  display: block;
+  margin-bottom: 10px; /* Space between line and footnotes header */
+}
+
+.footnotes-header {
+  margin-left: 35px;
+  margin-bottom: 10px;
+}
+
+.footnotes ol {
+  list-style-type: decimal; /* Ensures numbers with periods */
+  padding-left: 15px; /* Adds left padding for indentation */
+  margin: 0;
+  counter-reset: footnote-counter; /* Initialize custom counter */
+}
+
+.footnotes li {
+  position: relative;
+  margin-bottom: 10px; /* Space between footnotes */
+  line-height: 1.3; /* Adjust line height for readability */
+  padding-left: 20px; /* Adjust indentation for space before the number */
+  z-index: 3; /* Footnotes are above everything else */
+}
+
+.footnotes a {
+  color: skyblue; /* Set the link color to baby blue */
+  text-decoration: none; /* Remove underline */
+}
+
+.footnotes a:hover {
+  text-decoration: underline; /* Underline the link on hover */
+}
+
+.first-data{
+  color: #FFA1FF; /* Set the pixel counter text color to pink */
+}
+
+.second-data a {
+  color: #99ff99; /* Example color for secondary footnotes */
+}
+
+.third-data a{
+  color: #FFEB91;
+}
+
+
+
+
+
+
+/* Summary: Flip-Text Effects */
+.flip-text {
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  word-spacing: 4px;
+  color: white;
+  padding: 8px 0; /* Add padding for stable hover area */
+  transform: none; /* Ensure stable positioning */
+  display: block; /* Prevent margin collapse */
+}
+
+.flip-text a:hover{
+color: skyblue;
+}
+
+.word {
+  display: inline-block;
+  white-space: nowrap;
+  margin-right: 2px; /* Prevent layout shifts */
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.word span {
+  display: inline-block;
+  transition: transform 0.1s;
+  height: 1em; /* Maintain height stability */
+  transform: translateZ(0);
+  backface-visibility: hidden; /* Prevent subpixel rendering issues */
+  vertical-align: baseline; /* Ensure consistent alignment */
+  transform-origin: center 67.5%;
+}
+
+.flip-text:hover .word span {
+  transform: rotate(180deg); 
+  opacity: 80%;
+  filter: blur(0.375px);
+  will-change: transform; /* Add will-change to optimize performance */
+}
+
+a.flip-text:hover{
+  color: skyblue;
+  will-change: transform; /* Add will-change to optimize performance */
+}
+
+
+.bottom-punctuation {
+  font-size: 100%;
+  color: white; 
+  margin-left: -3px;
+  margin-right: 4px;
+  vertical-align: baseline; /* Ensure consistent alignment */
+}
+
+.top-punctuation {
+  color: white;
+  margin-left: -2px;
+  margin-right: -3px;
+  vertical-align: baseline; /* Ensure consistent alignment */
+}
+
+@media (max-width: 400px) {
+  .whole-canvas {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Add vertical spacing */
+  }
+
+  .main-content {
+    width: 100%; /* Full width for mobile */
+    margin-left: 0; /* Remove left margin */
+    margin-right: 0; /* Remove right margin */
+    height: auto;
+  }
+
+  .content-container{
+    width: 100%;
+    height: auto;
+  }
+
+  .footnotes {
+    width: 100%; /* Full width for mobile */
+    margin-top: 20px; /* Add spacing below main content */
+    margin-left: 20px;
+    position: relative;
+  }
+}

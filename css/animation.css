@@ -1,0 +1,76 @@
+/* Base styles for the lines */
+.main-line-structure {
+  height: 1px;
+  background-color: #ffffff;
+  margin: 0px;
+  opacity: 0;
+  width: 0; /* Start with no width */
+  animation: fadeInMainLine 0.5s ease forwards;
+}
+
+.footnotes .line {
+  height: 1px;
+  background-color: #ffffff;
+  margin: 0px 0;
+  opacity: 0;
+  width: 0; /* Start with no width */
+  animation: fadeInFootnotesLine 0.7s ease forwards;
+}
+
+/* Text elements start hidden and fade in after lines */
+.main-content {
+  opacity: 0;
+  animation: fadeInMain 1s ease forwards;
+  animation-delay: 0.5s; /* Start after lines finish */
+}
+
+.footnotes-header,
+.footnotes ol {
+  opacity: 0;
+  animation: fadeInFeet 1s ease forwards;
+  animation-delay: 0.3s; /* Start after lines finish */
+}
+
+/* Animation for main content line */
+@keyframes fadeInMainLine {
+  from {
+    opacity: 1;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: calc(100% - 222px); /* Adjust based on your layout */
+  }
+}
+
+/* Animation for footnotes line */
+@keyframes fadeInFootnotesLine {
+  from {
+    opacity: 1;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+/* Text fade in animation */
+@keyframes fadeInMain {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Text fade in animation */
+@keyframes fadeInFeet {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
