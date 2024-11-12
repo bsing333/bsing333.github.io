@@ -103,6 +103,7 @@ body::after {
   cursor: crosshair;
   z-index: 1;
   transition: opacity var(--fade-in-duration) ease-in;
+  padding-bottom: 30px;
 }
 
 .footnotes-line {
@@ -287,6 +288,16 @@ border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
 
 /* "responsive" */
 @media (max-width: 400px) {
+
+  .body{
+      background: none;
+      background-color: black;
+  }
+
+  body::after {
+    display: none;
+}
+
   .whole-canvas {
     flex-direction: column; /* Stack items vertically */
     gap: 20px; /* Add vertical spacing */
@@ -299,7 +310,7 @@ border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
     height: auto;
   }
 
-  .content-container{
+  .content-container {
     width: 100%;
     height: auto;
   }
@@ -308,13 +319,22 @@ border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
     width: 95%; /* Full width for mobile */
     margin-top: 20px; /* Add spacing below main content */
     margin-left: 20px;
-    padding-right:10px ;
-    position: relative;
-      scrollbar-width: none; /* For Firefox */
+    padding-right: 10px;
+    position: unset;
+    scrollbar-width: none; /* For Firefox */
+    height: auto;
   }
 
-  .main-line{
+  .main-line {
     display: none;
   }
+
+  /* Disable flip text interactivity on mobile */
+  .flip-text {
+    pointer-events: none; /* Disable interaction */
+    user-select: none; /* Prevent text selection */
+  }
+}
+
 
 }
