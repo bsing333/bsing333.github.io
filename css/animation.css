@@ -21,14 +21,14 @@
 .main-content {
   opacity: 0;
   animation: fadeInMain 1s ease forwards;
-  animation-delay: 0.5s; /* Start after lines finish */
+  animation-delay: 0.2s; /* Start after lines finish */
 }
 
 .footnotes-header,
 .footnotes ol {
   opacity: 0;
   animation: fadeInFeet 1s ease forwards;
-  animation-delay: 0.3s; /* Start after lines finish */
+  animation-delay: 0.2s; /* Start after lines finish */
 }
 
 /* Animation for main content line */
