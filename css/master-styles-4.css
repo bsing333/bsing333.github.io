@@ -305,10 +305,12 @@ border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
   }
 
   .footnotes {
-    max-width: 95%; /* Full width for mobile */
+    width: 95%; /* Full width for mobile */
     margin-top: 20px; /* Add spacing below main content */
     margin-left: 20px;
+    padding-right:10px ;
     position: relative;
+      scrollbar-width: none; /* For Firefox */
   }
 
 }
