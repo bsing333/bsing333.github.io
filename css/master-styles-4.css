@@ -316,14 +316,14 @@ border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
   }
 
   .footnotes {
-    width: 91%; /* Full width for mobile */
+    width: 88%; /* Full width for mobile */
     margin-top: 20px; /* Add spacing below main content */
     margin-left: 20px;
     padding-right: 10px;
     position: unset;
     scrollbar-width: none; /* For Firefox */
     height: auto;
-    padding-bottom: 150px;
+    padding-bottom: 128px;
   }
 
   .main-line {
@@ -335,7 +335,4 @@ border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
     pointer-events: none; /* Disable interaction */
     user-select: none; /* Prevent text selection */
   }
-}
-
-
 }
