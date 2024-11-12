@@ -88,7 +88,7 @@ body::after {
 
 /* Summary: FOOTNOTES */
 .footnotes {
-  position: absolute;
+  position: fixed;
   pointer-events: auto;
   font-family: Arial, sans-serif;
   font-weight: 100;
@@ -309,5 +309,9 @@ border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
     margin-top: 20px; /* Add spacing below main content */
     margin-left: 20px;
     position: relative;
+  }
+
+  .main-line {
+  width: calc(100% - 10px);
   }
 }
