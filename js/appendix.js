@@ -105,7 +105,7 @@ async function fetchFootnotes(range, rangeType, startCount = 1) {
 
                   // Format location: City only in a <span class="first-data">
                   if (country === 'United States' && region) {
-                    return city ? `<span class="first-data">${city}</span>, ${region}` : region;
+                    return city ? `<span class="first-data">${city}, ${region}</span>` : region;
                   } else if (city && country) {
                     return `<span class="first-data">${city}</span>, ${country}`;
                   } else {

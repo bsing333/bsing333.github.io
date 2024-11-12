@@ -323,7 +323,7 @@ border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
     position: unset;
     scrollbar-width: none; /* For Firefox */
     height: auto;
-    padding-bottom: 300px;
+    padding-bottom: 150px;
   }
 
   .main-line {
