@@ -305,13 +305,10 @@ border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
   }
 
   .footnotes {
-    width: 100%; /* Full width for mobile */
+    max-width: 100%; /* Full width for mobile */
     margin-top: 20px; /* Add spacing below main content */
     margin-left: 20px;
     position: relative;
   }
 
-  .main-line {
-  width: calc(100% - 10px);
-  }
 }
