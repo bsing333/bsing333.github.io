@@ -316,13 +316,14 @@ border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
   }
 
   .footnotes {
-    width: 95%; /* Full width for mobile */
+    width: 93%; /* Full width for mobile */
     margin-top: 20px; /* Add spacing below main content */
     margin-left: 20px;
     padding-right: 10px;
     position: unset;
     scrollbar-width: none; /* For Firefox */
     height: auto;
+    padding-bottom: 400px;
   }
 
   .main-line {
