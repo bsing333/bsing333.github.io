@@ -183,7 +183,7 @@ color: skyblue;
 
 .word span {
   display: inline-block;
-  transition: transform 0.1s;
+  transition: transform 0.15s;
   height: 1em; /* Maintain height stability */
   transform: translateZ(0);
   backface-visibility: hidden; /* Prevent subpixel rendering issues */
@@ -262,7 +262,7 @@ text-decoration: none;
 #Champion-Link::before {
   content: ''; /* Arrowhead */
   position: absolute;
-  top: 37%; /* Center the arrowhead vertically */
+  top: 35%; /* Center the arrowhead vertically */
 left: calc(100% + 20vw); /* Place the arrowhead at the end of the fully grown line */
 border: 6px solid transparent; /* Create a smaller triangle */
 border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */

@@ -134,7 +134,7 @@ async function fetchFootnotes(range, rangeType, startCount = 1) {
               const locationText = location ? ` in ${location}` : '';
 
               timeListItem.innerHTML = `
-                This website was loaded at 
+                This website was loaded on 
                 <span class="first-data">${day}, ${month} ${date}${ordinal(date)} ${year}</span> 
                 at 
                 <span class="first-data">${time}</span>${locationText}.
