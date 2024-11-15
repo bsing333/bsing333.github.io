@@ -183,7 +183,7 @@ color: skyblue;
 
 .word span {
   display: inline-block;
-  transition: transform 0.15s;
+  transition: transform 0.275s;
   height: 1em; /* Maintain height stability */
   transform: translateZ(0);
   backface-visibility: hidden; /* Prevent subpixel rendering issues */
@@ -254,7 +254,8 @@ text-decoration: none;
   background-color: white; /* Arrow shaft color */
   width: 0; /* Start collapsed */
   transform: translateY(-40%); /* Align vertically */
-  transition: width 0.1s ease-out; /* Smooth animation for growing line */
+  transition: width 0.3s ease-out; /* Smooth animation for growing line */
+  transition-delay: 0.05s;
   opacity: 80%;
   filter: none;
 }
@@ -269,7 +270,7 @@ border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
   opacity: 0; /* Initially hidden */
   transform: translateY(-35%); /* Keep it aligned vertically */
   transform-origin: center; /* Ensure it aligns perfectly */
-  transition: opacity 0.2s ease-out 0.0125s; /* Smooth fade-in with a slight delay */
+  transition: opacity 0.3s ease-out 0.01s; /* Smooth fade-in with a slight delay */
   filter: none;
 }
 
