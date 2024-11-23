@@ -54,7 +54,7 @@ body::after {
 /* Main content (TRUE centered) */
 .main-content {
   width: 80%;
-  max-width: 555px;
+  max-width: 500px;
   margin-top: 17px;
   /* Create fashion-forward positioning */
   margin-left: clamp(0px,5%,20%); /* Dynamic left margin */
@@ -223,6 +223,7 @@ a.flip-text:hover{
 .see-archive-wrapper {
   width: 100%;
   text-align: left;
+  margin-top: 24px;
 }
 
 
