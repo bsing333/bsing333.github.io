@@ -304,7 +304,7 @@ border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
     flex-direction: column; /* Stack items vertically */
     gap: 20px; /* Add vertical spacing */
     justify-content: start;
-    min-height: none;
+    min-height: 50vh;
   }
 
   .main-content {
@@ -331,7 +331,6 @@ border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
   }
 
   .main-line {
-    display: none;
   }
 
   /* Disable flip text interactivity on mobile */
