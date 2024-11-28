@@ -55,7 +55,7 @@ body::after {
 .main-content {
   width: 80%;
   max-width: 500px;
-  margin-top: 17px;
+  /* margin-top: 17px; */
   /* Create fashion-forward positioning */
   margin-left: clamp(0px,5%,20%); /* Dynamic left margin */
   margin-right: clamp(196px,20%,0px);
