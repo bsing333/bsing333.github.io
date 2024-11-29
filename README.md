@@ -1,8 +1,10 @@
 This is my business card, currently set for "Digital Product Designer". 
 
-It meets the following criteria:
+You can see this work at https://bsing333.github.io/
 
-  A. Design an 'About Me' with clear value proposition.
-  B. Show code proficiency on this Github with particular attention to ways it empowers point A.
+This work aims to meet the following criteria:
+
+  (A.) Design an 'About Me' with clear value proposition statement.  
+  (B.) Show code proficiency on this Github with particular attention to ways an understanding of code might empower point A.
 
 Last updated November 28th
