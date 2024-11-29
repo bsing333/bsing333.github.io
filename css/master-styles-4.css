@@ -1,4 +1,11 @@
 /* Summary: No Scroll Bar */
+@font-face {
+  font-family: 'Times Now Light';
+  src: url('../fonts/Times Now Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body, .flip-text-wrapper, .footnotes{
   overflow: auto; /* Enable scrolling */
   scrollbar-width: none; /* For Firefox */
@@ -12,7 +19,7 @@ html::-webkit-scrollbar {
 /* Summary: Body Styles */
 body {
   font-size: 22px;
-  font-family: Times;
+    font-family: 'Times Now Light', Times, serif;
   line-height: 29px;
   margin: 0;
   padding: 0;
@@ -208,7 +215,7 @@ a.flip-text:hover{
   font-size: 100%;
   color: white; 
   margin-left: -3px;
-  margin-right: 4px;
+  margin-right: 2.5px;
   vertical-align: baseline; /* Ensure consistent alignment */
 }
 
