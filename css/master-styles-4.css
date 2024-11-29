@@ -39,7 +39,6 @@ html::-webkit-scrollbar {
 body {
   font-size: 22px;
   font-family: 'Times Now', Times, serif;
-  font-weight: 100;
   line-height: 29px;
   margin: 0;
   padding: 0;
@@ -75,6 +74,7 @@ body::after {
   align-items: center;
   box-sizing: border-box;
   padding: 20px;
+    font-weight: 100;
     overflow: none;
 }
 
