@@ -365,7 +365,6 @@ border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
     margin-top: 20px; /* Add spacing below main content */
     margin-left: 20px;
     padding-right: 10px;
-    font-size: 12px;
     position: unset;
     scrollbar-width: none; /* For Firefox */
     height: auto;
