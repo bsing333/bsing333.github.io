@@ -16,7 +16,7 @@
 
 :root {
   --footnote-width: 222px;
-  --styled-border-width: 0.07825px;
+  --styled-border-width: 0.5px;
 }
 
 html, body, .flip-text-wrapper, .footnotes{
