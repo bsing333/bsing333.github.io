@@ -105,9 +105,9 @@ body::after {
 .footnotes {
   position: fixed;
   pointer-events: auto;
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-weight: 100;
-/*  letter-spacing: .05em;*/
+  letter-spacing: .05em;
   top: 10px; /* Space from the top of the parent container */
   right: 10px; /* Space from the right edge of the screen */
   font-size: 10px;
