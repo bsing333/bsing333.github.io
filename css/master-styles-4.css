@@ -1,8 +1,15 @@
 /* Summary: No Scroll Bar */
 @font-face {
-  font-family: 'Times Now Light';
+  font-family: 'Times Now';
+  src: url('../fonts/Times Now ExtraLight.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Times Now';
   src: url('../fonts/Times Now Light.otf') format('opentype');
-  font-weight: normal;
+  font-weight: 200;
   font-style: normal;
 }
 
@@ -19,7 +26,8 @@ html::-webkit-scrollbar {
 /* Summary: Body Styles */
 body {
   font-size: 22px;
-    font-family: 'Times Now Light', Times, serif;
+  font-family: 'Times Now', Times, serif;
+  font-weight: 100;
   line-height: 29px;
   margin: 0;
   padding: 0;
@@ -183,7 +191,7 @@ color: skyblue;
 .word {
   display: inline-block;
   white-space: nowrap;
-  margin-right: 2px; /* Prevent layout shifts */
+  margin-right: 2.25px; /* Prevent layout shifts */
   transform-style: preserve-3d;
   perspective: 1000px;
 }
@@ -215,7 +223,7 @@ a.flip-text:hover{
   font-size: 100%;
   color: white; 
   margin-left: -3px;
-  margin-right: 2.5px;
+  margin-right: 1.75/px;
   vertical-align: baseline; /* Ensure consistent alignment */
 }
 
@@ -301,6 +309,7 @@ border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
   .body{
       background: none;
       background-color: black;
+      font-weight: 200;
   }
 
   body::after {
