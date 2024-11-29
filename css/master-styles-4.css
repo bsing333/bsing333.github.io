@@ -69,7 +69,7 @@ body::after {
 .whole-canvas {
   position: relative;
   width: 100%;
-  min-height: 92vh;
+  min-height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,7 +251,9 @@ a.flip-text:hover{
 .see-archive-wrapper {
   width: 100%;
   text-align: left;
-  margin-top: 24px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 8px 0px;
 }
 
 
