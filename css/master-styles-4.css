@@ -13,6 +13,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Footnotes';
+  src: url('../fonts/Union-Regular.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
 
 :root {
   --footnote-width: 222px;
@@ -111,7 +117,7 @@ body::after {
 .footnotes {
   position: fixed;
   pointer-events: auto;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Footnotes', Helvetica, sans-serif;
   font-weight: 100;
   letter-spacing: .02em;
   top: 10px; /* Space from the top of the parent container */
@@ -286,7 +292,7 @@ text-decoration: none;
 #Champion-Link::before {
   content: ''; /* Arrowhead */
   position: absolute;
-  top: 35.125%; /* Center the arrowhead vertically */
+  top: 35.5%; /* Center the arrowhead vertically */
 left: calc(100% + 20vw); /* Place the arrowhead at the end of the fully grown line */
 border: 6px solid transparent; /* Create a smaller triangle */
 border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
