@@ -13,6 +13,12 @@
   font-style: normal;
 }
 
+
+:root {
+  --footnote-width: 222px;
+  --styled-border-width: 0.07825px;
+}
+
 html, body, .flip-text-wrapper, .footnotes{
   overflow: auto; /* Enable scrolling */
   scrollbar-width: none; /* For Firefox */
@@ -73,7 +79,7 @@ body::after {
   /* margin-top: 17px; */
   /* Create fashion-forward positioning */
   margin-left: clamp(0px,5%,20%); /* Dynamic left margin */
-  margin-right: clamp(196px,20%,0px);
+  margin-right: clamp(200px,20%,0px);
   /* Ensure top text stays visible on narrow screens */
   /*margin-top: -8px;  /*Subtract the padding from top margin*/
   /* Add padding for stable hover */
@@ -91,7 +97,7 @@ body::after {
 }
 
 .main-line {
-  width: calc(100% - 222px); /* Matches content-container width */
+  width: calc(100% - var(--footnote-width)); /* Matches content-container width */
   margin-bottom: 20px; /* Space below the line */
   position: absolute;
   background-color: var(--line-color);
@@ -109,10 +115,10 @@ body::after {
   font-weight: 100;
   letter-spacing: .02em;
   top: 10px; /* Space from the top of the parent container */
-  right: 10px; /* Space from the right edge of the screen */
+  right: 0px; /* Space from the right edge of the screen */
   font-size: 10px;
   line-height: 1.5;
-  width: 175px;
+  width: calc(var(--footnote-width) * .8825);
   padding-right: 10px;
   height: 95vh; /* Adjust to your desired height */
   overflow-y: auto; /* Enable vertical scrolling */
@@ -134,7 +140,7 @@ body::after {
 
 .footnotes ol {
   list-style-type: decimal; /* Ensures numbers with periods */
-  padding-left: 15px; /* Adds left padding for indentation */
+  padding-left: 16px; /* Adds left padding for indentation */
   margin: 0;
   counter-reset: footnote-counter; /* Initialize custom counter */
 }
@@ -267,7 +273,7 @@ text-decoration: none;
   position: absolute;
   top: 40%; /* Center the line vertically */
   left: 100%; /* Start at the right edge of the text */
-  height: 1px; /* Thickness of the arrow shaft */
+  height:   var(--styled-border-width); /* Thickness of the arrow shaft */
   background-color: white; /* Arrow shaft color */
   width: 0; /* Start collapsed */
   transform: translateY(-40%); /* Align vertically */
@@ -280,7 +286,7 @@ text-decoration: none;
 #Champion-Link::before {
   content: ''; /* Arrowhead */
   position: absolute;
-  top: 35%; /* Center the arrowhead vertically */
+  top: 35.125%; /* Center the arrowhead vertically */
 left: calc(100% + 20vw); /* Place the arrowhead at the end of the fully grown line */
 border: 6px solid transparent; /* Create a smaller triangle */
 border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
