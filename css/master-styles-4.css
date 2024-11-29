@@ -107,7 +107,7 @@ body::after {
   pointer-events: auto;
   font-family: Helvetica, sans-serif;
   font-weight: 100;
-  letter-spacing: .05em;
+  letter-spacing: .02em;
   top: 10px; /* Space from the top of the parent container */
   right: 10px; /* Space from the right edge of the screen */
   font-size: 10px;
@@ -306,6 +306,10 @@ border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
 
 /* "responsive" */
 @media (max-width: 444px) {
+
+  html{
+    overflow-x: hidden;
+  }
 
   .body{
       background: none;
