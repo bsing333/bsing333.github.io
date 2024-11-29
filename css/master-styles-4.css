@@ -37,7 +37,7 @@ body {
   min-height: 100vh;
   cursor: crosshair;
   display: block;
-  overflow: none;
+  overflow-x: hidden;
 }
 
 /* Summary: Body Overlay */
@@ -176,7 +176,7 @@ body::after {
 /* Summary: Flip-Text Effects */
 .flip-text {
   position: relative;
-  margin-top: 0px;
+  margin-top: 16px;
   margin-bottom: 16px;
   word-spacing: 4px;
   color: white;
