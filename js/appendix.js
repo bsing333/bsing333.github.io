@@ -73,7 +73,7 @@ async function fetchFootnotes(range, rangeType, startCount = 1) {
     linkSpan.classList.add(rangeType);
 
     listItem.innerHTML = `${row[0]} `;
-    linkSpan.innerHTML = `<a href="${row[2]}" target="_blank">${row[1]}</a>`;
+    linkSpan.innerHTML = `<a href="${row[2]}" target="_blank" rel="noopener noreferrer">${row[1]}</a>`;
     listItem.appendChild(linkSpan);
     listItem.classList.add('footnote-item');
     footnotesList.appendChild(listItem);

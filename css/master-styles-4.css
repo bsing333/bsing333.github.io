@@ -197,6 +197,10 @@ body::after {
   display: block; /* Prevent margin collapse */
 }
 
+.first{
+  padding: 2px 0px;
+}
+
 /*.flip-text a:hover{
 color: skyblue;
 }*/
@@ -361,6 +365,7 @@ border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
     margin-top: 20px; /* Add spacing below main content */
     margin-left: 20px;
     padding-right: 10px;
+    font-size: 11px;
     position: unset;
     scrollbar-width: none; /* For Firefox */
     height: auto;
