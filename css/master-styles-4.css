@@ -313,7 +313,7 @@ border-left-color: rgba(255,255,255,0.8); /* Right-pointing triangle */
       background: url('../images/dark-sky.jpg') no-repeat center center fixed;
       background-size: contain; /* Ensures the entire image fits in view */
       font-weight: 200;
-      overflow-x: none;
+      overflow-x: hidden;
   }
 
   body::after {
