@@ -3,7 +3,7 @@ const API_KEY = 'AIzaSyA7Un7q8RhZXTdyzvxnYaDcqUXDizcI46c'; // Your API Key
 const SHEET_ID = '1B5_VDYBUBzSRr9nV004F1ZT2F8xezJMV2v4odGlZHx8'; // Your Google Sheet ID
 const RANGE1 = 'Sheet1!B3:D5'; // Adjust the range to skip the header row and start from row 3
 const RANGE2 = 'Sheet1!B6:D10'; // Adjust the range for the second set of footnotes
-const RANGE3 = 'Sheet1!B11:D18'; // New range for the third set of footnotes
+const RANGE3 = 'Sheet1!B11:D21'; // New range for the third set of footnotes
 
 /**
  * Fetch the current time in New York and format it with spans.
