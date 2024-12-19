@@ -168,7 +168,7 @@ body::after {
   text-decoration: underline; /* Underline the link on hover */
 }
 
-.first-data{
+.first-data{ 
   color: #FFA1FF; /* Set the pixel counter text color to pink */
 }
 
@@ -215,7 +215,7 @@ color: skyblue;
 
 .word span {
   display: inline-block;
-  transition: transform 0.275s;
+  transition: transform 0.375s;
   height: 1em; /* Maintain height stability */
   transform: translateZ(0);
   backface-visibility: hidden; /* Prevent subpixel rendering issues */
