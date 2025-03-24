@@ -1,25 +1,4 @@
 /* Summary: No Scroll Bar */
-@font-face {
-  font-family: 'Times Now';
-  src: url('../fonts/Times Now ExtraLight.otf') format('opentype');
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Times Now';
-  src: url('../fonts/Times Now SemiLight.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Footnotes';
-  src: url('../fonts/footnotes.otf') format('opentype');
-  font-weight: 200;
-  font-style: normal;
-}
-
 :root {
   --footnote-width: 222px;
   --styled-border-width: 0.5px;
