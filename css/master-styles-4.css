@@ -17,7 +17,7 @@ html::-webkit-scrollbar {
 /* Summary: Body Styles */
 body {
   font-size: 22px;
-  font-family: 'Times Now', Times, serif;
+  font-family: Times, serif;
   line-height: 29px;
   margin: 0;
   padding: 0;
